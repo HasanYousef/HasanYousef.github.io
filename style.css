@@ -1,109 +1,255 @@
-.container {
-    display: flex;
-    width: 100%;
-    max-width: 1560px;
-    margin: auto;
+:root {
+    --main-color: #009933;
+    --main-color-rgb: 0, 153, 51;
 }
 
-.content {
-    padding: 8px;
+body {
+    background-color: #fff;
+    font-family: 'Almarai', sans-serif;
 }
 
-.left-col {
-    flex: 1;
-}
-
-.right-col {
-    flex: 2;
-}
-
-.left-col > div {
-    margin: 8px;
-}
-
-.right-col > div {
-    margin: 8px;
-}
-
-.radius {
+img {
     border-radius: 8px;
 }
 
-.screenshots-container {
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
+.display-none {
+    display: none;
 }
 
-.screenshot {
-    width:32%;
-    border-radius:6px;
+.decoration-bar {
+    z-index: 999999;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 6px;
+    background-color: var(--main-color);
 }
 
-@media all and (max-width: 1060px) {
-    .screenshots-container {
-        display:flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content:space-around;
-        width: 100%;
-    }
-
-    .screenshot {
-        width: 100%;
-        margin-top: 26px;
-    }
-
-    .w3-third {
-        width: 66%;
-        margin: auto;
-    }
-
-    .left-col {
-        flex: 2;
-    }
-    
-    .right-col {
-        flex: 3;
-    }
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-@media all and (max-width: 900px) {
-    .container {
-        flex-direction: column;
-        margin-top: 8px;
-    }
-
-    .left-col {
-        width: 80%;
-        margin: auto;
-    }
-    
-    .right-col {
-        width: 80%;
-        margin: auto;
-    }
+.custom-section {
+    margin-top: -32px;
+    display: 'flex';
+    align-items: center;
+    justify-content: space-around;
 }
 
-@media all and (max-width: 640px) {
-    .container {
-        flex-direction: column;
-        margin-top: 8px;
-    }
+.custom-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 60vw;
+}
 
-    .left-col {
-        width: 100%;
-    }
-    
-    .right-col {
-        width: 100%;
-    }
+.avatar {
+    border-radius: 50%;
+    width: 195px;
+    height: 195px;
+}
 
-    .left-col > div {
-        margin: 0;
-    }
-    
-    .right-col > div {
-        margin: 0;
+h1 {
+    margin: 0;
+    margin-top: 32px;
+}
+
+p {
+    margin: 0;
+}
+
+.icons-bar {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-section-margin {
+    margin-bottom: 60px;
+}
+
+.sub-section img {
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+}
+
+.sub-section-content h3, h5, h6 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.sub-section-content h3 {
+    font-weight: bold;
+}
+
+.sub-section-content h6 {
+    color: var(--main-color);
+}
+
+.project {
+    max-width: 100%;
+}
+.project a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.project a img {
+    height: 24px;
+    width: 24px;
+    margin: 0;
+}
+.project a h3 {
+    margin: 0;
+    color: var(--main-color);
+    margin-right: 4px;
+}
+.project p {
+    margin-bottom: 40px;
+}
+.project .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 320px;
+}
+.project .project-technologies div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 calc(16.66% - 20px);
+    padding: 0px;
+    box-sizing: border-box;
+}
+.project .project-technologies div img {
+    width: 40px;
+    height: 24px;
+    padding: 14px;
+}
+
+/* FULLPAGE.JS STARTS HERE */
+#fp-nav {
+    margin-top: -40vh;
+}
+.fp-tooltip {
+    color: #000 !important;
+}
+.fp-slidesNav ul {
+    display: flex;
+    justify-content: center;
+}
+.fp-controlArrow.fp-prev {
+    left: 0;
+    border: none;
+    width: 40px;
+    height: 400px;
+    background-position: center;
+    background: url(icons/chevron-compact-left.svg) no-repeat;
+    background-size: 40px 40px;
+    cursor: pointer;
+}
+.fp-controlArrow.fp-next {
+    right: 0;
+    border: none;
+    width: 40px;
+    height: 400px;
+    background-position: center center;
+    background: url(icons/chevron-compact-right.svg);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    cursor: pointer;
+}
+.fp-viewing-first-page .myArrow{
+    display:none;
+}
+.fp-viewing-last-page .myArrow{
+    display:none;
+}
+.fp-watermark {
+    display: none;
+}
+/* FULLPAGE.JS STARTS HERE */
+
+/* MATERIAL BUTTON STARTS HERE */
+.button {
+    margin-top: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 64px;
+    padding: 11px 16px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    background: #ffffff00;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ripple-effect {
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    opacity: 1;
+    position: absolute;
+    border-radius: 50%;
+}
+.ripple-effect-dark {
+    width: 0;
+    height: 0;
+    background: rgba(var(--main-color-rgb), 0.3);
+    transform: scale(0);
+    opacity: 1;
+    position: absolute;
+    border-radius: 50%;
+}
+.ripple-animation {
+    animation: ripple-drop 0.4s cubic-bezier(0, 0, 0.3, 1);
+}
+@keyframes ripple-drop {
+    100% {
+        transform: scale(2);
+        opacity: 0;
     }
 }
+.button img {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+.button span {
+    font-size: 18px;
+}
+/* MATERIAL BUTTON ENDS HERE */
