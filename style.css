@@ -78,6 +78,7 @@ p {
 .icon img {
     width: 18px;
     height: 18px;
+    border-radius: 0;
 }
 
 .sub-section {
