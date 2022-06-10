@@ -5,7 +5,7 @@
 
 body {
     background-color: #fff;
-    font-family: 'Almarai', sans-serif;
+    font-family: 'Roboto', 'Almarai', sans-serif;
 }
 
 .display-none {
@@ -145,6 +145,10 @@ p {
     width: 40px;
     height: 24px;
     padding: 14px;
+}
+
+#myAdvice span {
+    color: var(--main-color);
 }
 
 /* FULLPAGE.JS STARTS HERE */

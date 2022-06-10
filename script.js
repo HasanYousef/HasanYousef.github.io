@@ -1,10 +1,13 @@
+(() => {
+
+
 new fullpage('#fullpage', {
     licenseKey: 'gplv3-license',
     autoScrolling: true,
     scrollingSpeed: 250,
     navigation: true,
-    anchors: ['', 'career', 'projects'],
-    navigationTooltips: ['', 'Career', 'Projects'],
+    anchors: ['', 'career', 'projects', 'advice'],
+    navigationTooltips: ['', 'Career', 'Projects', ''],
 	slidesNavigation: true,
     showActiveTooltip: true,
     parallax: true,
@@ -72,3 +75,6 @@ window.addEventListener('load', () => {
     }
 });
 /* MATERIAL BUTTON ENDS HERE */
+
+
+})();
