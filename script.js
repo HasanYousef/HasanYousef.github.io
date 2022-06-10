@@ -34,6 +34,11 @@ new fullpage('#fullpage', {
     },
 });
 
+let myAdvice = document.querySelector('#myAdvice');
+if(myAdvice){
+    myAdvice.innerHTML = 'كُن ولداً' + ' <span>طيباً</span>';
+}
+
 let previousArrow = document.querySelector('.fp-controlArrow.fp-prev');
 if(previousArrow){
     previousArrow.classList.add('display-none');
