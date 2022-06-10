@@ -8,10 +8,6 @@ body {
     font-family: 'Almarai', sans-serif;
 }
 
-img {
-    border-radius: 8px;
-}
-
 .display-none {
     display: none;
 }
@@ -78,7 +74,6 @@ p {
 .icon img {
     width: 18px;
     height: 18px;
-    border-radius: 0;
 }
 
 .sub-section {
