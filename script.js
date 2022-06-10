@@ -3,10 +3,10 @@ new fullpage('#fullpage', {
     autoScrolling: true,
     scrollingSpeed: 250,
     navigation: true,
-    anchors: ['home', 'about-me', 'contact', 'trash'],
-    navigationTooltips: ['Home', 'About me', 'Contact', 'trash'],
+    anchors: ['', 'career', 'projects'],
+    navigationTooltips: ['', 'Career', 'Projects'],
 	slidesNavigation: true,
-    //showActiveTooltip: true,
+    showActiveTooltip: true,
     parallax: true,
     scrollOverflow: false,
     onSlideLeave: function(section, origin, destination, direction, trigger){
@@ -31,7 +31,10 @@ new fullpage('#fullpage', {
     },
 });
 
-
+let previousArrow = document.querySelector('.fp-controlArrow.fp-prev');
+if(previousArrow){
+    previousArrow.classList.add('display-none');
+}
 
 /* MATERIAL BUTTON STARTS HERE */
 window.addEventListener('load', () => {
