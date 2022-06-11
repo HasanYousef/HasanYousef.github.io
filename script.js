@@ -6,8 +6,8 @@ new fullpage('#fullpage', {
     autoScrolling: true,
     scrollingSpeed: 250,
     navigation: true,
-    anchors: ['', 'career', 'projects', 'advice'],
-    navigationTooltips: ['', 'Career', 'Projects', ''],
+    anchors: ['', 'me', 'career', 'projects', 'advice'],
+    navigationTooltips: ['', 'Me', 'Career', 'Projects', 'Advice'],
 	slidesNavigation: true,
     showActiveTooltip: true,
     parallax: true,
@@ -32,6 +32,9 @@ new fullpage('#fullpage', {
             }
         }
     },
+    onScrollOverflow: function(section, slide, position, direction){
+        console.log(section, slide, position, direction);
+    }
 });
 
 let myAdvice = document.querySelector('#myAdvice');

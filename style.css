@@ -39,17 +39,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     max-width: 60vw;
 }
 
 .avatar {
     border-radius: 50%;
-    width: 195px;
-    height: 195px;
+    width: 150px;
+    height: 150px;
 }
 
-h1 {
+h2 {
     margin: 0;
     margin-top: 32px;
 }
@@ -86,22 +86,20 @@ p {
 }
 
 .sub-section img {
-    width: 40px;
-    height: 40px;
-    margin-right: 24px;
+    width: 34px;
+    height: 34px;
+    margin-right: 20px;
+    margin-top: 4px;
 }
 
-.sub-section-content h3, h5, h6 {
+.sub-section-content h4, h5, h6 {
     margin: 0;
     margin-bottom: 8px;
     font-weight: normal;
 }
 
-.sub-section-content h3 {
+.sub-section-content h4 {
     font-weight: bold;
-}
-
-.sub-section-content h6 {
     color: var(--main-color);
 }
 
@@ -119,7 +117,7 @@ p {
     width: 24px;
     margin: 0;
 }
-.project a h3 {
+.project a h4 {
     margin: 0;
     color: var(--main-color);
     margin-right: 4px;
@@ -149,6 +147,18 @@ p {
 
 #myAdvice span {
     color: var(--main-color);
+}
+
+#brainSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#brainSection img {
+    margin: 0 22px;
+    color: green;
+    width: 80px;
 }
 
 /* FULLPAGE.JS STARTS HERE */
@@ -200,7 +210,7 @@ p {
     width: 100%;
     box-sizing: border-box;
     min-width: 64px;
-    padding: 11px 16px;
+    padding: 10px 14px;
     border: 1px solid #000;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
@@ -246,10 +256,10 @@ p {
 }
 .button img {
     margin-right: 8px;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 .button span {
-    font-size: 18px;
+    font-size: 15px;
 }
 /* MATERIAL BUTTON ENDS HERE */
