@@ -145,10 +145,6 @@ p {
     padding: 14px;
 }
 
-#myAdvice span {
-    color: var(--main-color);
-}
-
 #brainSection {
     display: flex;
     align-items: center;
