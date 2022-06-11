@@ -45,8 +45,8 @@ body {
 
 .avatar {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
 }
 
 h2 {
@@ -72,8 +72,8 @@ p {
 }
 
 .icon img {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 }
 
 .sub-section {
@@ -158,12 +158,13 @@ p {
 #brainSection img {
     margin: 0 22px;
     color: green;
-    width: 80px;
+    width: 70px;
 }
 
 /* FULLPAGE.JS STARTS HERE */
 #fp-nav {
-    margin-top: -40vh;
+    top: 10% !important;
+    right: 2% !important;
 }
 .fp-tooltip {
     color: #000 !important;
@@ -256,10 +257,10 @@ p {
 }
 .button img {
     margin-right: 8px;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 .button span {
-    font-size: 15px;
+    font-size: 14px;
 }
 /* MATERIAL BUTTON ENDS HERE */
