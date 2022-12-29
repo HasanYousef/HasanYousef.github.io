@@ -260,3 +260,31 @@ p {
     font-size: 14px;
 }
 /* MATERIAL BUTTON ENDS HERE */
+
+
+
+/* meet-page */
+.meet-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    width: 98vw;
+}
+
+.meet-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.meet-page a {
+    color: #009933;
+}
+
+.meet-page img {
+    height: 15rem;
+}
